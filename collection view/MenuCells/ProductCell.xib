@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="gTV-IL-0wX" customClass="ProductCell" customModule="colection_view" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="202" height="142"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="202" height="142"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qbn-WA-JMd">
+                        <rect key="frame" x="0.0" y="0.0" width="202" height="142"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="qbn-WA-JMd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2n0-D1-3LB"/>
+                <constraint firstAttribute="trailing" secondItem="qbn-WA-JMd" secondAttribute="trailing" id="7GI-xT-l7v"/>
+                <constraint firstAttribute="bottom" secondItem="qbn-WA-JMd" secondAttribute="bottom" id="Gb4-Am-OfG"/>
+                <constraint firstItem="qbn-WA-JMd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bYg-Pe-9Da"/>
+            </constraints>
+            <size key="customSize" width="202" height="142"/>
+            <connections>
+                <outlet property="productImage" destination="qbn-WA-JMd" id="jII-5a-fj1"/>
+            </connections>
+            <point key="canvasLocation" x="247.82608695652175" y="109.15178571428571"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
